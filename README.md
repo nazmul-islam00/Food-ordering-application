@@ -1,2 +1,2 @@
 # Food-ordering-application
- Simple food ordering application with separate GUI fro customers and restaurants
+ Simple food ordering application with separate GUI for customers and restaurants
