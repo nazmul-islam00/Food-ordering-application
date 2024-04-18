@@ -1,0 +1,17 @@
+.gradient{
+    -fx-background-color: linear-gradient(to bottom right,#db3535,#3036c7,#14c06a);
+}
+
+.white-form{
+    -fx-background-color: #fff;
+}
+
+.head-label{
+    -fx-border-color: linear-gradient(to bottom right,#db3535,#3036c7,#14c06a);
+    -fx-border-width: 0 0 0 5px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.button{
+    -fx-background-color: linear-gradient(to bottom right,#db3535,#3036c7,#14c06a);
+}

@@ -1,0 +1,20 @@
+.gradient{
+    -fx-background-color: linear-gradient(to bottom right,#ad2121,#2d7764,#20a5ae);
+}
+.head-label{
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 0 5px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.head-label2{
+    -fx-border-color: linear-gradient(to bottom right,#ad2121,#2d7764,#20a5ae);
+    -fx-border-width: 0 0 0 5px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.table-view.column-header{
+    -fx-background-color: linear-gradient(to bottom right,#ad2121,#2d7764,#20a5ae);
+    -fx-text-fill: white;
+}
+

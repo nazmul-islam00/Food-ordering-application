@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OrderController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="200.0" styleClass="gradient" stylesheets="@Home.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0">
+         <children>
+            <Button fx:id="returnToHomeButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#returnToHome" text="Back">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.12941177189350128" blue="0.12941177189350128" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.6784313917160034" green="0.12941177189350128" blue="0.12941177189350128" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.508130081300813">
+                           <color>
+                              <Color red="0.1764705926179886" green="0.46666666865348816" blue="0.3921568691730499" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.125490203499794" green="0.6470588445663452" blue="0.6823529601097107" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="placeOrderButton" layoutX="20.0" layoutY="294.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="22.0" prefWidth="260.0" text="Place Order">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.6784313917160034" green="0.12941177189350128" blue="0.12941177189350128" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.6784313917160034" green="0.12941177189350128" blue="0.12941177189350128" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.508130081300813">
+                           <color>
+                              <Color red="0.1764705926179886" green="0.46666666865348816" blue="0.3921568691730499" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.125490203499794" green="0.6470588445663452" blue="0.6823529601097107" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <TableView fx:id="cart" layoutX="23.0" layoutY="58.0" prefHeight="200.0" prefWidth="260.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="58.0">
+              <columns>
+                <TableColumn fx:id="foodNameColumn" prefWidth="200.0" text="Food Name" />
+                <TableColumn fx:id="quantityColumn" prefWidth="60.0" text="Quantity" />
+              </columns>
+            </TableView>
+            <Label layoutX="21.0" layoutY="22.0" styleClass="head-label" stylesheets="@Home.css" text="Cart" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="menuTable" layoutX="314.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+        <columns>
+          <TableColumn fx:id="categoryColumn" prefWidth="100.0" text="Category" />
+          <TableColumn fx:id="nameColumn" prefWidth="160.0" text="Food Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="40.0" text="Price" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="restaurantChoice" layoutX="311.0" layoutY="14.0" prefHeight="25.0" prefWidth="143.0" />
+      <Button fx:id="goButton" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#go" text="Go">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6784313917160034" green="0.12941177189350128" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6784313917160034" green="0.12941177189350128" blue="0.12941177189350128" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.508130081300813">
+                     <color>
+                        <Color red="0.1764705926179886" green="0.46666666865348816" blue="0.3921568691730499" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.125490203499794" green="0.6470588445663452" blue="0.6823529601097107" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <ChoiceBox fx:id="searchChoice" layoutX="311.0" layoutY="57.0" prefHeight="25.0" prefWidth="143.0" />
+      <TextField fx:id="searchField1" layoutX="311.0" layoutY="97.0" prefHeight="25.0" prefWidth="135.0" />
+      <TextField fx:id="searchField2" layoutX="462.0" layoutY="97.0" prefHeight="25.0" prefWidth="128.0" />
+   </children>
+</AnchorPane>
